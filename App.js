@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import { useState } from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 import ImageViewer from "./components/ImageViewer";
 import Button from "./components/Button";
@@ -43,7 +44,7 @@ export default function App() {
   };
   const onSave = () => {};
   return (
-    <View style={styles.container}>
+    <GestureHandlerRootView style={styles.container}>
       <View style={styles.imageContainer}>
         <ImageViewer
           imageSource={placeholderImage}
@@ -78,7 +79,7 @@ export default function App() {
         <EmojiList onSelect={setPickedEmoji} onCloseModal={onModalClose} />
       </EmojiPicker>
       <StatusBar style="auto" />
-    </View>
+    </GestureHandlerRootView>
   );
 }
 
