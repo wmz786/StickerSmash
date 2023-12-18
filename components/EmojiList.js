@@ -1,13 +1,5 @@
 import { useState } from "react";
-import {
-  FlatList,
-  Image,
-  Platform,
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { FlatList, Image, Platform, Pressable, StyleSheet } from "react-native";
 
 const EmojiList = ({ onSelect, onCloseModal }) => {
   const [emoji] = useState([

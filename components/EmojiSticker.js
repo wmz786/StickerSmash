@@ -1,4 +1,3 @@
-import { Image, View } from "react-native";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
